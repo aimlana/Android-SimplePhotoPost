@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="16dp"
+    android:clipToPadding="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Post"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="12dp">
+
+            <ImageView
+                android:id="@+id/iv_post_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/gallery"
+                android:scaleType="centerCrop" />
+
+            <EditText
+                android:id="@+id/et_caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write a caption"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@null" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Posting"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="4dp"/>
+
+</LinearLayout>
